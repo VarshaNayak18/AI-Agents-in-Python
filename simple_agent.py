@@ -9,8 +9,8 @@ def simple_agent(task):
     elif "robot" in task:
         return "A robot is a machine capable of sensing, thinking, and acting"
     
-    elif "bye" in task:
-        return "Goodbye! See you soon"
+    elif "ai" in task:
+        return "Artificial Intelligence(AI) is a branch of computer science that enables machines to simulate human intelligence, such as learning, reasoning, problem-solving, and perception"
     
     elif "thank you" in task or "thanks" in task:
         return "You're welcome"
@@ -20,7 +20,7 @@ def simple_agent(task):
     
 # Run the agent
 while True:
-    user_input=input("Enter user response:")
+    user_input=input("Enter user response: ")
     if user_input.lower()=="exit":
         print("Agent shutting down")
         break
